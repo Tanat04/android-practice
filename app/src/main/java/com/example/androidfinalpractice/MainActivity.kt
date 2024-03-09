@@ -20,10 +20,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(view.root)
 
-        view.btnUniversity.setOnClickListener{
-            // TODO: UniversityListActivity 
-//            val intent = Intent(this, UniversityListActivity::class.java)
-//            startActivity(intent)
+        view.btnUniversity.setOnClickListener {
+            val intent = Intent(this, UniversityListActivity::class.java)
+            startActivity(intent)
         }
 
     }
