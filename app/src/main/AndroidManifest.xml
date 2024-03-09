@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".ApiCallActivity"
+            android:exported="false" />
+        <activity
             android:name=".UniversityListActivity"
             android:exported="false" />
         <activity

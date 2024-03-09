@@ -1,6 +1,5 @@
 package com.example.androidfinalpractice.viewModels
 
-
 import android.app.Activity
 import android.app.Application
 import android.util.Log

@@ -14,7 +14,11 @@ import com.example.androidfinalpractice.viewModels.UniversityViewModel
 import kotlinx.coroutines.launch
 
 class UniversityListActivity : AppCompatActivity() {
-    private val view: ActivityUniversityListBinding by lazy { ActivityUniversityListBinding.inflate(layoutInflater) }
+    private val view: ActivityUniversityListBinding by lazy {
+        ActivityUniversityListBinding.inflate(
+            layoutInflater
+        )
+    }
     private val viewModel: UniversityViewModel by viewModels()
     private val universities: MutableList<University> = mutableListOf()
 

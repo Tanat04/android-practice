@@ -20,6 +20,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(view.root)
 
+        view.btnApiCall.setOnClickListener {
+            val intent = Intent(this, ApiCallActivity::class.java)
+            startActivity(intent)
+        }
+
         view.btnUniversity.setOnClickListener {
             val intent = Intent(this, UniversityListActivity::class.java)
             startActivity(intent)
