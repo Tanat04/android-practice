@@ -39,5 +39,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, GoogleMapActivity::class.java)
             startActivity(intent)
         }
+
+        view.btnFirebase.setOnClickListener {
+            val intent = Intent(this, FirebaseActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

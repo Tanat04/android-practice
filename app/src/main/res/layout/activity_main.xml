@@ -75,6 +75,12 @@
             android:layout_height="wrap_content"
             android:text="Google Maps" />
 
+        <Button
+            android:id="@+id/btnFirebase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firebase" />
+
         <!--        <Button-->
         <!--            android:id="@+id/btnLoginPage"-->
         <!--            android:layout_width="wrap_content"-->
