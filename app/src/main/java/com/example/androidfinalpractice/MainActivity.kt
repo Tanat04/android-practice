@@ -46,12 +46,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         view.btnGPS.setOnClickListener {
-            val intent = Intent(this, FirebaseActivity::class.java)
+            val intent = Intent(this, GPSActivity::class.java)
             startActivity(intent)
         }
 
         view.btnCamera.setOnClickListener {
-            val intent = Intent(this, FirebaseActivity::class.java)
+            val intent = Intent(this, CameraActivity::class.java)
             startActivity(intent)
         }
     }
