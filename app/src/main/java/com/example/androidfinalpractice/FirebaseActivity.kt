@@ -9,9 +9,16 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.database
+import com.google.gson.Gson
 import java.time.LocalDate
 
 class FirebaseActivity : AppCompatActivity() {
+
+    data class FirebaseStudent(
+        val studentName: String? = null,
+        val grade: Double? = null,
+        val title: String? = null
+    )
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_firebase)
@@ -21,17 +28,16 @@ class FirebaseActivity : AppCompatActivity() {
         )
 
         val ref = database.getReference("message")
-        val studentRef = database.getReference("students")
+        val studentRef = database.getReference("students").child("1")
 
         studentRef.addListenerForSingleValueEvent(object: ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
-                val students = snapshot.value.toString()
-                Log.d("FirebaseActivity", students)
+                val student = snapshot.getValue(FirebaseStudent::class.java)
+
+                Toast.makeText(this@FirebaseActivity, "My name is ${student?.studentName}", Toast.LENGTH_SHORT).show()
             }
 
-            override fun onCancelled(error: DatabaseError) {
-                TODO("Not yet implemented")
-            }
+            override fun onCancelled(error: DatabaseError) {}
 
         })
 
