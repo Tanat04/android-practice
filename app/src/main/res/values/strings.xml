@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidFinalPractice</string>
+    <string name="google_map_key">AIzaSyAehPYb-kXxu_vrR_CPACYR_h1SX23YktU</string>
 </resources>

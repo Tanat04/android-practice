@@ -34,5 +34,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, NotificationActivity::class.java)
             startActivity(intent)
         }
+
+        view.btnGoogleMap.setOnClickListener {
+            val intent = Intent(this, GoogleMapActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
