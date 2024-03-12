@@ -19,6 +19,13 @@
             android:text="Fragment 1" />
 
         <Button
+            android:id="@+id/btnFragment2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fragment 2" />
+
+
+        <Button
             android:id="@+id/btnApiCall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

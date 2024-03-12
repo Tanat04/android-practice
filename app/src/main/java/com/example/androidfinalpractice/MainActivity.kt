@@ -25,10 +25,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        view.btnApiCall.setOnClickListener {
-//            val intent = Intent(this, ApiCallActivity::class.java)
-//            startActivity(intent)
-//        }
+        view.btnFragment2.setOnClickListener {
+            val intent = Intent(this, Fragment2Activity::class.java)
+            startActivity(intent)
+        }
 //
 //        view.btnApiCall.setOnClickListener {
 //            val intent = Intent(this, ApiCallActivity::class.java)
