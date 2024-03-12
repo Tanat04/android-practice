@@ -29,14 +29,14 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Fragment2Activity::class.java)
             startActivity(intent)
         }
-//
-//        view.btnApiCall.setOnClickListener {
-//            val intent = Intent(this, ApiCallActivity::class.java)
-//            startActivity(intent)
-//        }
 
         view.btnApiCall.setOnClickListener {
             val intent = Intent(this, ApiCallActivity::class.java)
+            startActivity(intent)
+        }
+
+        view.btnBottomNavigation.setOnClickListener {
+            val intent = Intent(this, BottomNavigationActivity::class.java)
             startActivity(intent)
         }
 

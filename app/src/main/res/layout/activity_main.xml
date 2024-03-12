@@ -44,6 +44,12 @@
             android:text="TBH Labs Phone" />
 
         <Button
+            android:id="@+id/btnBottomNavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom Navigation" />
+
+        <Button
             android:id="@+id/btnNotification"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
