@@ -40,6 +40,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        view.btnLogin.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+
         view.btnUniversity.setOnClickListener {
             val intent = Intent(this, UniversityListActivity::class.java)
             startActivity(intent)
