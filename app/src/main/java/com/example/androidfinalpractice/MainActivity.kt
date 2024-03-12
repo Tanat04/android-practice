@@ -20,6 +20,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(view.root)
 
+        view.btnFragment1.setOnClickListener {
+            val intent = Intent(this, Fragment1Activity::class.java)
+            startActivity(intent)
+        }
+
+//        view.btnApiCall.setOnClickListener {
+//            val intent = Intent(this, ApiCallActivity::class.java)
+//            startActivity(intent)
+//        }
+//
+//        view.btnApiCall.setOnClickListener {
+//            val intent = Intent(this, ApiCallActivity::class.java)
+//            startActivity(intent)
+//        }
+
         view.btnApiCall.setOnClickListener {
             val intent = Intent(this, ApiCallActivity::class.java)
             startActivity(intent)
